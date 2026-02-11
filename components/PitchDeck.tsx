@@ -125,14 +125,14 @@ const slides = [
             className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full"
           >
             <div className="mb-6 h-32 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-gray-900">Cursos Individuales</h3>
-              <p className="text-lg text-cursia-blue font-semibold">"Proyectos Puntuales"</p>
-              <p className="text-lg text-gray-600 mt-2">Perfecto para necesidades aisladas.</p>
+              <h3 className="text-2xl font-bold text-gray-900">Nivel 01</h3>
+              <p className="text-lg text-cursia-blue font-semibold">Proyecto Puntual</p>
+              <p className="text-lg text-gray-600 mt-2">1 Curso</p>
             </div>
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
               <div className="text-center py-8 bg-gray-50 rounded-2xl border border-gray-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión por curso</p>
+                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
                 <div className="flex items-baseline justify-center gap-2">
                   <span className="text-5xl font-black text-gray-900">600</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
@@ -140,9 +140,9 @@ const slides = [
               </div>
 
               <div className="flex items-center justify-between p-5 bg-blue-50 rounded-xl border border-blue-100">
-                <span className="text-gray-900 font-medium text-lg">Licencia por usuario</span>
+                <span className="text-gray-900 font-medium text-lg">Licencias Incluidas</span>
                 <div className="flex flex-col items-end">
-                  <span className="text-cursia-blue font-bold text-2xl">5 USD</span>
+                  <span className="text-cursia-blue font-bold text-2xl">Hasta 50</span>
                 </div>
               </div>
             </div>
@@ -159,30 +159,24 @@ const slides = [
           >
             <div className="absolute top-0 right-0 bg-cursia-blue text-white text-xs px-4 py-2 rounded-bl-2xl font-bold tracking-widest uppercase shadow-sm">Recomendado</div>
             <div className="mb-6 h-32 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-gray-900">Alianza Cursia + 8</h3>
-              <p className="text-lg text-cursia-blue font-semibold">"Desarrollo Estructural"</p>
-              <p className="text-lg text-gray-600 mt-2">Para empresas que buscan resultados, no solo cumplimiento.</p>
+              <h3 className="text-2xl font-bold text-gray-900">Nivel 02</h3>
+              <p className="text-lg text-cursia-blue font-semibold">Desarrollo Equipo</p>
+              <p className="text-lg text-gray-600 mt-2">3 Cursos</p>
             </div>
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
               <div className="text-center py-6 bg-blue-50/30 rounded-2xl border border-blue-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión por curso</p>
+                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-black text-cursia-blue">360</span>
+                  <span className="text-5xl font-black text-cursia-blue">1,500</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
-                </div>
-
-                <div className="mt-4 pt-4 border-t border-blue-100 w-3/4 mx-auto">
-                  <p className="text-gray-500 text-lg">Facturación anual: <span className="font-medium">2.880 USD</span></p>
-                  <p className="text-gray-600 text-sm mt-1">(Paquete de 8 cursos)</p>
                 </div>
               </div>
 
               <div className="flex items-center justify-between p-5 bg-blue-50 rounded-xl border border-blue-100">
-                <span className="text-gray-900 font-medium text-lg">Licencia por usuario</span>
+                <span className="text-gray-900 font-medium text-lg">Licencias Incluidas</span>
                 <div className="flex flex-col items-end">
-                  <span className="text-gray-400 line-through text-lg">5 USD</span>
-                  <span className="text-cursia-blue font-bold text-2xl">3 USD</span>
+                  <span className="text-cursia-blue font-bold text-2xl">Hasta 150</span>
                 </div>
               </div>
             </div>
@@ -192,36 +186,30 @@ const slides = [
             </button>
           </motion.div>
 
-          {/* Plan 3 - New */}
+          {/* Plan 3 */}
           <motion.div
             whileHover={{ scale: 1.01 }}
             className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full"
           >
             <div className="mb-6 h-32 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-gray-900">Alianza Cursia + 24</h3>
-              <p className="text-lg text-cursia-blue font-semibold">"Plan Escala"</p>
-              <p className="text-lg text-gray-600 mt-2">Máximo alcance para organizaciones en crecimiento.</p>
+              <h3 className="text-2xl font-bold text-gray-900">Nivel 03</h3>
+              <p className="text-lg text-cursia-blue font-semibold">Plan de Escala</p>
+              <p className="text-lg text-gray-600 mt-2">7 Cursos</p>
             </div>
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
               <div className="text-center py-6 bg-blue-50/30 rounded-2xl border border-blue-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión por curso</p>
+                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-black text-cursia-blue">240</span>
+                  <span className="text-5xl font-black text-cursia-blue">2,800</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
-                </div>
-
-                <div className="mt-4 pt-4 border-t border-blue-100 w-3/4 mx-auto">
-                  <p className="text-gray-500 text-lg">Facturación anual: <span className="font-medium">5.760 USD</span></p>
-                  <p className="text-gray-600 text-sm mt-1">(Paquete de 24 cursos)</p>
                 </div>
               </div>
 
               <div className="flex items-center justify-between p-5 bg-blue-50 rounded-xl border border-blue-100">
-                <span className="text-gray-900 font-medium text-lg">Licencia por usuario</span>
+                <span className="text-gray-900 font-medium text-lg text-sm">Licencias Incluidas</span>
                 <div className="flex flex-col items-end">
-                  <span className="text-gray-400 line-through text-lg">5 USD</span>
-                  <span className="text-cursia-blue font-bold text-2xl">2 USD</span>
+                  <span className="text-cursia-blue font-bold text-lg text-right">ILIMITADAS (Full Access)</span>
                 </div>
               </div>
             </div>
@@ -230,6 +218,7 @@ const slides = [
               Iniciar Plan Escala
             </button>
           </motion.div>
+
         </div>
       </div>
     )
