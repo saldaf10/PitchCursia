@@ -7,7 +7,8 @@ import ProgressBar from "./ProgressBar";
 import {
   ChevronLeft, ChevronRight, Check, X,
   Brain, Globe, Clock, ShieldCheck, Activity, Users,
-  Zap, Award
+  Zap, Award, Search, History, Database, Lock,
+  DollarSign, Cloud, FilePlus, Server
 } from "lucide-react";
 
 // Updated content based on user feedback
@@ -121,9 +122,12 @@ const slides = [
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto w-full px-4">
           {/* Plan 1 */}
           <motion.div
-            whileHover={{ scale: 1.01 }}
-            className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full"
+            whileHover={{ scale: 1.02 }}
+            className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full relative overflow-hidden"
           >
+            <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse shadow-sm">
+              -50% OFF
+            </div>
             <div className="mb-6 h-32 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-gray-900">Nivel 01</h3>
               <p className="text-lg text-cursia-blue font-semibold">Proyecto Puntual</p>
@@ -132,9 +136,13 @@ const slides = [
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
               <div className="text-center py-8 bg-gray-50 rounded-2xl border border-gray-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
+                <p className="text-sm text-gray-400 font-medium uppercase tracking-wide mb-1">Antes</p>
+                <p className="text-xl text-gray-400 line-through font-medium mb-2">$1,198 USD</p>
+                <div className="w-16 h-0.5 bg-gray-200 mx-auto mb-4"></div>
+
+                <p className="text-lg text-gray-900 font-bold uppercase tracking-wide mb-0">Ahora</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-black text-gray-900">600</span>
+                  <span className="text-5xl font-black text-gray-900">599</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
                 </div>
               </div>
@@ -154,10 +162,14 @@ const slides = [
 
           {/* Plan 2 */}
           <motion.div
-            whileHover={{ scale: 1.01 }}
-            className="p-8 border-2 border-cursia-blue rounded-3xl shadow-2xl bg-white relative overflow-hidden flex flex-col h-full"
+            whileHover={{ scale: 1.02 }}
+            className="p-8 border-2 border-cursia-blue rounded-3xl shadow-2xl bg-white relative overflow-hidden flex flex-col h-full transform scale-105 z-10"
           >
             <div className="absolute top-0 right-0 bg-cursia-blue text-white text-xs px-4 py-2 rounded-bl-2xl font-bold tracking-widest uppercase shadow-sm">Recomendado</div>
+            <div className="absolute top-12 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-l-full shadow-sm">
+              -50% DESC
+            </div>
+
             <div className="mb-6 h-32 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-gray-900">Nivel 02</h3>
               <p className="text-lg text-cursia-blue font-semibold">Desarrollo Equipo</p>
@@ -165,10 +177,14 @@ const slides = [
             </div>
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
-              <div className="text-center py-6 bg-blue-50/30 rounded-2xl border border-blue-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
+              <div className="text-center py-6 bg-blue-50/50 rounded-2xl border border-blue-100">
+                <p className="text-sm text-gray-400 font-medium uppercase tracking-wide mb-1">Precio Regular</p>
+                <p className="text-xl text-gray-400 line-through font-medium mb-2">$2,798 USD</p>
+                <div className="w-16 h-0.5 bg-blue-200 mx-auto mb-4"></div>
+
+                <p className="text-lg text-cursia-blue font-bold uppercase tracking-wide mb-0">Oferta Limitada</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-black text-cursia-blue">1,500</span>
+                  <span className="text-6xl font-black text-cursia-blue">1,399</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
                 </div>
               </div>
@@ -188,9 +204,12 @@ const slides = [
 
           {/* Plan 3 */}
           <motion.div
-            whileHover={{ scale: 1.01 }}
-            className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full"
+            whileHover={{ scale: 1.02 }}
+            className="p-8 border border-gray-200 rounded-3xl shadow-xl bg-white flex flex-col h-full relative overflow-hidden"
           >
+            <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse shadow-sm">
+              -50% OFF
+            </div>
             <div className="mb-6 h-32 flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-gray-900">Nivel 03</h3>
               <p className="text-lg text-cursia-blue font-semibold">Plan de Escala</p>
@@ -199,9 +218,13 @@ const slides = [
 
             <div className="space-y-6 flex-grow flex flex-col justify-between">
               <div className="text-center py-6 bg-blue-50/30 rounded-2xl border border-blue-100">
-                <p className="text-lg text-gray-400 font-medium uppercase tracking-wide mb-2">Inversión Total</p>
+                <p className="text-sm text-gray-400 font-medium uppercase tracking-wide mb-1">Precio de Lista</p>
+                <p className="text-xl text-gray-400 line-through font-medium mb-2">$5,598 USD</p>
+                <div className="w-16 h-0.5 bg-blue-200 mx-auto mb-4"></div>
+
+                <p className="text-lg text-gray-900 font-bold uppercase tracking-wide mb-0">Precio Especial</p>
                 <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-black text-cursia-blue">2,800</span>
+                  <span className="text-5xl font-black text-cursia-blue">2,799</span>
                   <span className="text-lg text-gray-500 font-medium">USD</span>
                 </div>
               </div>
@@ -209,7 +232,7 @@ const slides = [
               <div className="flex items-center justify-between p-5 bg-blue-50 rounded-xl border border-blue-100">
                 <span className="text-gray-900 font-medium text-lg text-sm">Licencias Incluidas</span>
                 <div className="flex flex-col items-end">
-                  <span className="text-cursia-blue font-bold text-lg text-right">ILIMITADAS (Full Access)</span>
+                  <span className="text-cursia-blue font-bold text-2xl">Hasta 500</span>
                 </div>
               </div>
             </div>
@@ -219,6 +242,152 @@ const slides = [
             </button>
           </motion.div>
 
+        </div>
+      </div>
+    )
+  },
+  {
+    id: "agente-cursia",
+    title: "Agente Cursia: Inteligencia a tu Medida",
+    content: (
+      <div className="w-full h-full flex flex-col justify-center max-w-6xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
+          <div className="flex-1">
+            <h2 className="text-6xl font-bold text-gray-900 tracking-tight mb-6">
+              Agente <span className="text-cursia-blue">Cursia</span>
+            </h2>
+            <p className="text-3xl text-gray-500 leading-relaxed">
+              Un desarrollo personalizado que permite crear un agente con toda la información de su empresa.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center">
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-64 h-64 bg-gradient-to-br from-cursia-blue/10 to-blue-50 rounded-3xl border border-blue-100 flex items-center justify-center relative shadow-2xl shadow-blue-100"
+            >
+              <Brain className="w-32 h-32 text-cursia-blue" />
+              <div className="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+                <Search className="w-8 h-8 text-cursia-blue" />
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-white p-4 rounded-2xl shadow-lg border border-gray-100">
+                <Lock className="w-8 h-8 text-cursia-blue" />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { title: "Búsqueda Referenciada", desc: "Encuentra información exacta citando los documentos originales.", icon: Search },
+            { title: "Trazabilidad Total", desc: "Historial completo de consultas y fuentes utilizadas.", icon: History },
+            { title: "Seguridad Enterprise", desc: "Sus datos nunca salen de su entorno seguro corporativo.", icon: Lock },
+            { title: "Know-How Propio", desc: "Alimentado exclusivamente con la base de conocimiento de su empresa.", icon: Database },
+          ].map((feature, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 + (idx * 0.1) }}
+              className="p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-cursia-blue mb-4">
+                <feature.icon className="w-6 h-6" />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h4>
+              <p className="text-gray-500 text-sm leading-relaxed">{feature.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    )
+  },
+  {
+    id: "agente-cursia-pricing",
+    title: "Inversión Agente Cursia",
+    content: (
+      <div className="w-full h-full flex flex-col justify-center max-w-6xl mx-auto space-y-12">
+        <h2 className="text-6xl font-bold text-gray-900 tracking-tight text-center mb-4">Inversión Agente Cursia</h2>
+
+        {/* Main Hero Card for Initial Development */}
+        <div className="flex justify-center">
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="w-full max-w-2xl bg-white p-12 rounded-[2.5rem] shadow-2xl border-2 border-gray-900 relative overflow-hidden"
+          >
+            <div className="absolute top-6 right-6 bg-red-600 text-white text-sm font-black px-4 py-2 rounded-full shadow-lg border-2 border-white animate-pulse">
+              OFERTA LANZAMIENTO -50% OFF
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-10">
+              <div className="w-24 h-24 bg-gray-900 rounded-3xl flex items-center justify-center text-white shadow-xl">
+                <DollarSign className="w-12 h-12" />
+              </div>
+
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-3xl font-black text-gray-900 uppercase tracking-tighter mb-2">Desarrollo Inicial</h3>
+                <p className="text-xl text-gray-500 font-medium">Personalización total de su agente y carga de base de conocimiento inicial.</p>
+              </div>
+
+              <div className="text-center md:text-right border-t md:border-t-0 md:border-l border-gray-100 pt-6 md:pt-0 md:pl-10 min-w-[200px]">
+                <p className="text-lg text-gray-400 line-through font-bold mb-1">$2,998 USD</p>
+                <div className="flex items-baseline gap-2 justify-center md:justify-end">
+                  <span className="text-7xl font-black text-gray-900">1,499</span>
+                  <span className="text-xl text-gray-500 font-bold">USD</span>
+                </div>
+                <p className="text-xs font-black text-gray-400 uppercase tracking-[0.2em] mt-3">Pago Único</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Maintenance Options Below */}
+        <div className="flex flex-col items-center">
+          <p className="text-sm font-bold text-gray-400 uppercase tracking-widest mb-8">Seleccione su Plan de Mantenimiento</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
+            {/* Mantenimiento Básico */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 flex items-center gap-6"
+            >
+              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-cursia-blue">
+                <Cloud className="w-8 h-8" />
+              </div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold text-gray-900">Mantenimiento Básico</h4>
+                <p className="text-sm text-gray-500">Hosting, Dominio y SSL.</p>
+              </div>
+              <div className="text-right">
+                <p className="text-3xl font-black text-cursia-blue">120</p>
+                <p className="text-[10px] font-bold text-gray-400 uppercase">USD / MES</p>
+              </div>
+            </motion.div>
+
+            {/* Mantenimiento Full */}
+            <motion.div
+              whileHover={{ y: -5 }}
+              className="bg-blue-600 p-8 rounded-3xl shadow-xl border border-blue-400 flex items-center gap-6 text-white relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 bg-white/20 px-3 py-1 text-[9px] font-black uppercase tracking-widest rounded-bl-xl">Full Service</div>
+              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-white">
+                <FilePlus className="w-8 h-8" />
+              </div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold">Mantenimiento Full</h4>
+                <p className="text-sm text-blue-100">Carga de documentos ilimitada.</p>
+              </div>
+              <div className="text-right">
+                <p className="text-3xl font-black text-white">149</p>
+                <p className="text-[10px] font-bold text-blue-200 uppercase">USD / MES</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
     )
